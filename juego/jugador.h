@@ -13,7 +13,7 @@ class Jugador
     string color;
     int posicion;
     Dado midado;
-    void cambia_posicion(int n);
+    
 
     public:
     Jugador();
@@ -21,6 +21,7 @@ class Jugador
 
     ~Jugador();
 
+    void cambia_posicion(int n);
     int get_posicion();
     void set_nombre(string n);
     void imprimir();

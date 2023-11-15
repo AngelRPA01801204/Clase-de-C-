@@ -34,7 +34,7 @@ void Jugador:: mover()
 
 Jugador:: Jugador()
 {
-    nombre = "yo";
+    nombre = "Angel";
     posicion = 0;
 }
 
