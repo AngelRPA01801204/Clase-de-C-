@@ -2,8 +2,8 @@
 #include "dado.h"
 #include "jugador.h"
 
-using std::cout;
-using std::endl;
+using std:: cout;
+using std:: endl;
 
 int main()
 {
@@ -14,18 +14,17 @@ int main()
 
     midado.imprimir();
 
-    for (int i = 0; i < 5; i++)
+    for ( int i = 0; i < 5; i++ )
     {
         cout << midado.lanzar() << endl;
     }
 
-
     Jugador yo;
-    yo.set_nombre("Angel");
+    yo.set_nombre("Lio");
     yo.imprimir();
     yo.mover();
     yo.imprimir();
-    yo.mover();
-    yo.imprimir();
-
+    
+    Jugador tu  = Jugador(10, "indra");
+    tu.imprimir();
 }

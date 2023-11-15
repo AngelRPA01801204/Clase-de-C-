@@ -1,11 +1,12 @@
-#ifndef _DADO_H_
-#define _DADO_H_
+#ifndef DADO_H
+#define DADO_H
 
 class Dado
 {
     private:
         int caras;
-    public:
+
+    public: 
         int lanzar();
         void set_caras(int n);
         int get_caras();
