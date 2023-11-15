@@ -5,30 +5,27 @@
 using std::cout;
 using std::endl;
 
-
-
-
 int main()
 {
     Dado midado;
-
     midado.set_caras(8);
 
-    // cout << midado << endl;
+    //cout << midado << endl;
 
-
-    midado.imprimir()
+    midado.imprimir();
 
     for (int i = 0; i < 5; i++)
     {
-        cout << midado.lanzar() << endl; 
+        cout << midado.lanzar() << endl;
     }
 
-    jugador yo;
+
+    Jugador yo;
     yo.set_nombre("Angel");
     yo.imprimir();
     yo.mover();
-    yo.imprimirr();
+    yo.imprimir();
+    yo.mover();
+    yo.imprimir();
 
 }
-

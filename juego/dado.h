@@ -2,7 +2,6 @@
 #define _DADO_H_
 
 class Dado
-
 {
     private:
         int caras;
@@ -11,7 +10,6 @@ class Dado
         void set_caras(int n);
         int get_caras();
         void imprimir();
-
 };
 
 #endif

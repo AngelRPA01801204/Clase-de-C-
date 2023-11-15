@@ -1,30 +1,31 @@
 #include <iostream>
 #include "jugador.h"
-#include "dado.h"
-
-
 using std::cout;
+using std::endl;
 
-void jugador::cambia_posicion(int n)
+void Jugador::cambia_posicion(int n)
 {
-    posicion = posicion + n;
-
+    posicion = posicion + n ;
 }
 
-int jugador::get_posicion()
+int Jugador::get_posicion()
 {
     return posicion;
-
 }
 
-void jugador::imprimir()
+void Jugador::set_nombre(string n)
 {
-    cout << "soy el jugador" << nombre ;
-    cout << "mi posicion es" << posicion ; 
+    nombre = n;
 }
 
-void jugador::mover()
+void Jugador::imprimir()
+{
+    cout << "Soy el jugador " << nombre ;
+    cout << " Mi posicion es " << posicion << endl;
+}
+
+void Jugador::mover()
 {
     int mov = midado.lanzar();
-    cambia(mov);
+    cambia_posicion(mov);
 }
